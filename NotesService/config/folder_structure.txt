@@ -1,0 +1,7 @@
+Configs are loaded by config package 
+Read more about structure here https://github.com/lorenwest/node-config/wiki/Configuration-Files
+
+In a nut shell:
+- create local-{deployment_name}.json (e.g. local-debug.json)
+- override defaults in it
+- run with $NODE_ENV environment variable equal to {deployment_name} (e.g. $NODE_ENV=debug)
