@@ -1,0 +1,12 @@
+version: '2'
+services:
+    notesservice:
+        build: ../NotesService
+        ports:
+            - "3000:3000"
+        volumes:
+            - ../NotesService:/notesservice
+        depends_on:
+            - mongo
+    mongo:
+        image: mongo
